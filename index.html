@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Profile</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<nav class = "sticky">
+	<ul>
+		<label class="logo">TASHVIK SRIVASTAVA</label>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">Links</a></li>
+		<li><a href="#">Skills</a></li>
+		<li><a href="#">Projects</a></li>
+		<li><a href="#">Resume</a></li>
+	</ul>
+	</nav>
+
+	<div class="container" id="home" style="background: url(images/background.jpg); background-size: 1519px 872px;" >
+	<div id="txt1">
+		<h1><span id="auto-type"> </span></h1>
+		<br>
+	</div>
+		<div class="row-1">
+			<a href="" style="margin:20; position: relative; right : 980px">Connect With Me</a>
+			<a href="" style="margin:20; position : relative; right : 950px;">Download CV</a>
+		</div>
+		
+
+	</div>
+
+
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/user.jpeg">
+			</div>
+			<div class="about-col-2">
+				<h1>About Me</h1>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section class="">
+	
+</section>
+
+<!-- auto typer -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+<!-- auto typer -->
+
+<!-- Ripple -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js'></script>
+<script  src="script.js"></script>
+<!-- Ripple -->
+
+<script type="text/javascript">
+	window.addEventListener("scroll" , function() {
+		// body...
+		var nav = document.querySelector("nav");
+		nav.classList.toggle("sticky" , window.scrollY > 0);
+
+	})
+</script>
+</body>
+
+</html
