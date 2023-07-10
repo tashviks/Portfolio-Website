@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Personal Profile</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
@@ -71,6 +72,25 @@
 
 	})
 </script>
+
+<script>
+	   ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+	    ScrollReveal().reveal('.row-1', { delay: 500, origin: 'left' });
+      	ScrollReveal().reveal('.about , .container , .row', { delay: 600, origin: 'right' });
+      // ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      // ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      // ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      // ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+
+</script>
+
+
 </body>
 
 </html
