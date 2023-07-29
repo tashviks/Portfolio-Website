@@ -5,7 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Personal Profile</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<script src="https://unpkg.com/scrollreveal"></script>
+		<script>
+        	ScrollReveal({ reset: true });
+    	</script>
 </head>
 <body>
 
@@ -40,18 +44,42 @@
 			<div class="about-col-1">
 				<img src="images/user.jpeg">
 			</div>
-			<div class="about-col-2">
-				<h1>About Me</h1>
 
+			<div class="about-col-2">
+
+<div class=".aboutMe"><h1>About Me</h1></div>
+<div class =".education"><h2>Education</h2>
+				<br>
+				<h3><cite>LOVELY PROFESSIONAL UNIVERSITY</cite></h3>
+				<p>BACHELOR OF TECHNOLOGY : </p>
+				<p></p>COMPUTER SCIENCE AND ENGINEERING</p>
+				<p>2021-2025</p>
+				<p>CGPA : 8.47/10</p>
+				<br>
+				<h3><cite>GURUKUL ACADEMY</cite></h3>
+				<p>SENIOR SECONDARY : ISC</p>
+				<p>Percentage : 84.5%</p>
+				<br>
+</div>
+<div class=".certifications">
+				<h2>CERTIFICATIONS</h2>
+				<br>
+				<h3><cite>Full Stack Development Using MERN</cite></h3>
+				<p>Programming Pathshala&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Jul 2023</p>
+				<br>
+				<h3><cite>Bitcoin for Developers</cite></h3>
+				<p>Saylor Academy&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Mar 2023</p>
+				<br>
+				<h3><cite>Bitcoin for Everyone</cite></h3>
+				<p>Saylor Academy&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Jul 2023</p>
+				
+			</div>
 			</div>
 		</div>
 	</div>
 </div>
 
 
-<section class="">
-	
-</section>
 
 <!-- auto typer -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -72,25 +100,13 @@
 
 	})
 </script>
-
-<script>
-	   ScrollReveal({
-        reset: true,
-        distance: '60px',
-        duration: 2500,
-        delay: 400
-      });
-
-	    ScrollReveal().reveal('.row-1', { delay: 500, origin: 'left' });
-      	ScrollReveal().reveal('.about , .container , .row', { delay: 600, origin: 'right' });
-      // ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
-      // ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
-      // ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
-      // ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
-
-</script>
-
-
 </body>
+
+<script >
+	ScrollReveal().reveal('.about-col-1' ,  {delay : 300});
+	ScrollReveal().reveal('.about-col-2 ' , {delay : 700});
+	ScrollReveal().reveal('.education' , {delay : 1400});
+	ScrollReveal().reveal('.certifications' , {delay : 2000});
+</script>
 
 </html
