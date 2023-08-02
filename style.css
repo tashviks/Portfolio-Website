@@ -141,6 +141,32 @@ a:hover:after{
 	margin-left: 15px;
 	border-radius:15px ;
 }
+table,th,td{
+	border : none;
+}
+.link-image {
+    -webkit-animation:spin 4s ;
+    -moz-animation:spin 4s ;
+    animation:spin 4s ;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+/* th{
+	padding-left: 60px;
+	padding-right: 40px;
+} */
+
+
 
 
 
