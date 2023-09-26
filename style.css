@@ -180,15 +180,34 @@ gap:50px;
 }
 
 .child{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 320px;
 	height: 320px;
-	background-color: rgb(105, 97, 97);
+	border:2px solid white;
+	background-color: rgba(154, 146, 146, 0.5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
 	margin-top: 70px;
+	backdrop-filter: blur(14px);
+	overflow: hidden;
+}
+.child img{
+	border-radius: 20px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: all ease 1s;
+}
+.child:hover img{
+	scale: 1.2;
 }
 
 #pro-head{
 color: aliceblue; 
-font-family: sans-serif; 
+font-family: sans-serif;
 font-size: 80px; 
 display:flex; 
 align-self: center; 
