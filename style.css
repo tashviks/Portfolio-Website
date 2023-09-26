@@ -149,7 +149,13 @@ table,th,td{
     -webkit-animation:spin 4s ;
     -moz-animation:spin 4s ;
     animation:spin 4s ;
+	transition: all ease 0.5s;
 }
+.link-image-con :hover{
+	scale:1.2;
+}
+
+
 @-moz-keyframes spin { 
     100% { -moz-transform: rotate(360deg); } 
 }
@@ -200,9 +206,16 @@ gap:50px;
 	width: 100%;
 	object-fit: cover;
 	transition: all ease 1s;
+	position: relative;
 }
 .child:hover img{
 	scale: 1.2;
+}
+.child:hover .child-bottom{
+	bottom:0;
+}
+.child-bottom{
+transition: all ease 0.5s;
 }
 
 #pro-head{
@@ -213,4 +226,11 @@ display:flex;
 align-self: center; 
 justify-content: center;
 padding-top: 70px;
+}
+.child-bottom{
+	height : 40%;
+	width : 100%;
+	background: linear-gradient(transparent , black);
+	position: absolute;
+	bottom:-40%;
 }
