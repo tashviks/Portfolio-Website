@@ -12,22 +12,24 @@ body{
 	font-family: sans-serif;
 	border: none;
 	background-color: black;
+	overflow-x : hidden;
 }
-
+body::-webkit-scrollbar {
+	display: none;
+  }
+  
 /* --------------------------- CSS FOR HOME --------------------------------------------*/
 
 nav{
-	position: fixed;
-	background: transparent;
+	background: black;
 	height: 80px;
 	width: 100%;
-	z-index: 100000;
 }
-nav.sticky ul {
-	background: black;
-	margin: auto;
-	padding 5px , 100px;
-	padding-right: 49px;
+nav.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top : 0;
+	z-index: 1;
 }
 
 .logo{
@@ -228,9 +230,22 @@ justify-content: center;
 padding-top: 70px;
 }
 .child-bottom{
+	display: flex;
 	height : 40%;
 	width : 100%;
 	background: linear-gradient(transparent , black);
 	position: absolute;
 	bottom:-40%;
+}
+.child-bottom img{
+	position: absolute;
+	height : 65px;
+	width: 65px;
+	margin-top: 45px;
+	margin-left:25px;
+	color : white;
+	transition: all ease 0.5s;
+}
+.child-bottom img:hover{
+	scale : 1.5;
 }
